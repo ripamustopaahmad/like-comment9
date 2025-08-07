@@ -104,6 +104,10 @@ const followers = [
     title: "diaspurnama07",
     link: "https://www.instagram.com/diaspurnama07?igsh=dzV6czg3cGtpZHp2",
   },
+    {
+    title: "wil_da1304",
+    link: "https://www.instagram.com/wil_da1304?igsh=a2J6d2R4cXQybXNs",
+  },
 ];
 // data sidebar
 const listData = [
@@ -296,7 +300,7 @@ photos.forEach((photo, i) => {
   galleryItem.addEventListener("click", () => {
     const modal = document.getElementById("modal");
     const modalImage = document.getElementById("modal-image");
-    modalImage.src = `${photo.src} (${i}).jpg`;
+    modalImage.src = `${photo.src} (${i+1}).jpg`;
     modal.style.display = "block";
   });
 });
@@ -305,3 +309,4 @@ document.querySelector(".close").addEventListener("click", () => {
   const modal = document.getElementById("modal");
   modal.style.display = "none";
 });
+
